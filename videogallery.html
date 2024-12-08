@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #B22222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-left: 40px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .video-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border-style: solid;
+            margin: 15px;
+        }
+        .video-card:hover {
+            transform: translateY(-10px);
+        }
+        .video-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .video-info {
+            padding: 10px 20px;
+        }
+        .video-info h3 {
+            margin: 0;
+            color: #333;
+            font-size: 18px;
+        }
+        .video-info p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .video-info a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4682B4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .video-info a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .sidebar:hover {
+    width: 250px; 
+    padding: 20px; 
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: none;
+}
+
+.sidebar:hover h2 {
+    display: block; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: none; 
+}
+
+.sidebar:hover ul {
+    display: block; 
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Gallery</h1>
+    <p>Explore the latest videos in our collection.</p>
+</header>
+
+
+<div class="sidebar">
+    <h2>The Wandering Fork</h2>
+        <ul>
+            <li><a href="Homepage.html" class="active">Home</a></li>
+             <li><a href="about.html" class="active">About</a></li>
+            <li><a href="Recipe.html" class="active">Recipe</a></li>
+            <li><a href="videogallery.html" class="active">VideoGallery</a></li>
+        </ul>
+    </div>
+
+<div class="gallery-container">
+    <!-- Video 1 -->
+    <div class="video-card">
+        <img src="fil.jpg" alt="Video Thumbnail" class="video-thumbnail">
+        <div class="video-info">
+            <h3>Exploring Filipino Cuisine</h3>
+            <p>A video talking about all of the unappreciated cusine in the Phillipines.</p>
+            <a href="https://www.youtube.com/watch?v=lw3_W5X1t54">Watch Now</a>
+        </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-card">
+        <img src="josh.jpg" alt="Video Thumbnail" class="video-thumbnail">
+        <div class="video-info">
+            <h3>Kitchen Tools</h3>
+            <p>Tools that is neede for cooking and making cooking easier.</p>
+            <a href="https://www.youtube.com/watch?v=O5hW_65fTxs" target="_blank">Watch Now</a>
+        </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-card">
+        <img src="josh2.jpg" alt="Video Thumbnail" class="video-thumbnail">
+        <div class="video-info">
+            <h3>50 Food Mistakes You Need To Avoid</h3>
+            <p>A Video telling you the mistakes of cooking and how to avoid it when cooking.</p>
+            <a href="https://www.youtube.com/watch?v=9msDfJR-ct4&t=755s" target="_blank">Watch Now</a>
+        </div>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="video-card">
+        <img src="fr.jpg" alt="Video Thumbnail" class="video-thumbnail">
+        <div class="video-info">
+            <h3>For the love of food! Exploring the art of French gastronomy.</h3>
+            <p>Discover the art of French Gastronomy.</p>
+            <a href="https://www.youtube.com/watch?v=VgM3u77MsVk" target="_blank">Watch Now</a>
+        </div>
+    </div>
+
+    <!-- Video 5 -->
+    <div class="video-card">
+        <img src="josh3.jpg" alt="Video Thumbnail" class="video-thumbnail">
+        <div class="video-info">
+            <h3>Food Hacks</h3>
+            <p>Take a look at the best coffee shops in Paris and enjoy the city's cafe culture.</p>
+            <a href="https://www.youtube.com/watch?v=7bFa3_eelWQ&t=418s" target="_blank">Watch Now</a>
+        </div>
+    </div>
+
+    <!-- Video 6 -->
+    <div class="video-card">
+        <img src="broth.jpg" alt="Video Thumbnail" class="video-thumbnail">
+        <div class="video-info">
+            <h3>Bone Broths and Stocks: Everything You Need to Know</h3>
+            <p>A video explaining the difference of Broth and Stocks.</p>
+            <a href="https://www.youtube.com/watch?v=-us4D0Fw6O8&t=161s" target="_blank">Watch Now</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Video Gallery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>French Breakfast Recipes</title>
+    <style>
+        body {
+            font-family: Trebuchet-MS, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5f2;
+            color: #333;
+        }
+        header {
+            background-color: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .recipes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .recipe-card {
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 300px;
+        }
+        .recipe-card h3 {
+            margin: 10px 0;
+            color: #4682B4;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .recipe-card p {
+            margin: 10px 20px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .sidebar {
+    background-color: #333;
+    color: white;
+    width: 40px; 
+    padding: 20px 5px; 
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease, padding 0.2s ease; 
+}
+
+.sidebar:hover {
+    width: 250px; 
+    padding: 20px; 
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: none; 
+}
+
+.sidebar:hover h2 {
+    display: block; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: none; 
+}
+
+.sidebar:hover ul {
+    display: block; 
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>French Dinner Recipes</h1>
+        <p>Delicious French dinners and the best seasons to enjoy them.</p>
+    </header>
+
+   <div class="sidebar">
+    <h2>The Wandering Fork</h2>
+        <ul>
+            <li><a href="Homepage.html" class="active">Home</a></li>
+             <li><a href="about.html" class="active">About</a></li>
+            <li><a href="Recipe.html" class="active">Recipe</a></li>
+            <li><a href="videogallery.html" class="active">VideoGallery</a></li>
+        </ul>
+    </div>
+
+       <div class="recipes-container">
+        <!-- Chateaubriand -->
+        <div class="recipe-card">
+            <img src="chateaubriand.jpg" alt="Chateaubriand">
+            <h3>Chateaubriand</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>1.5 lb beef tenderloin</li>
+                    <li>1 tbsp olive oil</li>
+                    <li>2 tbsp butter</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>1 tbsp fresh thyme</li>
+                    <li>1 cup red wine</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Preheat oven to 400°F (200°C).</li>
+                    <li>Season beef with salt, pepper, and thyme.</li>
+                    <li>Heat olive oil and butter in a skillet. Brown beef on all sides.</li>
+                    <li>Transfer to oven and roast for 20 minutes for medium-rare.</li>
+                    <li>Let rest, then deglaze the skillet with red wine to make sauce.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Best in winter or special occasions.</p>
+        </div>
+
+        <!-- Poulet Provencal -->
+        <div class="recipe-card">
+            <img src="poulet.jpg" alt="Poulet Provençal">
+            <h3>Poulet Provencal</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>4 chicken thighs</li>
+                    <li>1 tbsp olive oil</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>1 cup diced tomatoes</li>
+                    <li>1 tbsp fresh basil, chopped</li>
+                    <li>1 tbsp fresh thyme</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Heat olive oil in a pan and brown chicken thighs on both sides.</li>
+                    <li>Add garlic, tomatoes, basil, thyme, salt, and pepper.</li>
+                    <li>Simmer for 30 minutes until chicken is tender.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Ideal for summer.</p>
+        </div>
+
+        <!-- Salmon en Papillon -->
+        <div class="recipe-card">
+            <img src="salmon.jpg" alt="Salmon en Papillon">
+            <h3>Salmon en Papillon</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>2 salmon fillets</li>
+                    <li>1 lemon, sliced</li>
+                    <li>1 tbsp butter</li>
+                    <li>1 sprig fresh dill</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Preheat oven to 375°F (190°C).</li>
+                    <li>Place salmon fillets on parchment paper, season with salt and pepper.</li>
+                    <li>Top with lemon slices, butter, and dill. Fold parchment paper around fish to form a packet.</li>
+                    <li>Bake for 20 minutes or until salmon is cooked through.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Perfect for spring and summer.</p>
+        </div>
+
+        <!-- Tartiflette -->
+        <div class="recipe-card">
+            <img src="tar.jpg" alt="Tartiflette">
+            <h3>Tartiflette</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>2 lbs potatoes, peeled and sliced</li>
+                    <li>1/2 lb lardons (bacon cubes)</li>
+                    <li>1 onion, chopped</li>
+                    <li>1/2 cup white wine</li>
+                    <li>1 wheel of Reblochon cheese, sliced</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Preheat oven to 375°F (190°C).</li>
+                    <li>Boil potatoes until tender, drain, and set aside.</li>
+                    <li>Cook lardons and onions in a pan, then deglaze with wine.</li>
+                    <li>In a baking dish, layer potatoes, lardons, and onions. Top with cheese slices.</li>
+                    <li>Bake for 25 minutes until golden and bubbly.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Best in winter.</p>
+        </div>
+
+        <!-- Duck Confit -->
+        <div class="recipe-card">
+            <img src="duck.jpg" alt="Duck Confit">
+            <h3>Duck Confit</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>4 duck legs</li>
+                    <li>2 cups duck fat</li>
+                    <li>2 garlic cloves, crushed</li>
+                    <li>2 thyme sprigs</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Season duck legs with salt, pepper, and garlic.</li>
+                    <li>Cover with duck fat and cook slowly in a low oven for 3 hours.</li>
+                    <li>Serve with crispy potatoes or greens.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Ideal for winter.</p>
+        </div>
+
+        <!-- Tarte Tatin -->
+        <div class="recipe-card">
+            <img src="tarte.jpg" alt="Tarte Tatin">
+            <h3>Tarte Tatin</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>6 apples, peeled and sliced</li>
+                    <li>1 sheet puff pastry</li>
+                    <li>1/2 cup sugar</li>
+                    <li>4 tbsp butter</li>
+                    <li>1 tsp cinnamon</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Caramelize sugar and butter in a pan, then add apples.</li>
+                    <li>Cover with puff pastry and bake until golden.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Best in fall with apples in season.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 French Dinner Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>

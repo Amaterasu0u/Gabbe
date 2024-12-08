@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>French Breakfast Recipes</title>
+    <style>
+        body {
+            font-family: Trebuchet-MS, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5f2;
+            color: #333;
+        }
+        header {
+            background-color: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .recipes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .recipe-card {
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 300px;
+        }
+        .recipe-card h3 {
+            margin: 10px 0;
+            color: #4682B4;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .recipe-card p {
+            margin: 10px 20px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .sidebar {
+    background-color: #333;
+    color: white;
+    width: 40px; 
+    padding: 20px 5px; 
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease, padding 0.2s ease; 
+}
+
+.sidebar:hover {
+    width: 250px; 
+    padding: 20px; 
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: none; 
+}
+
+.sidebar:hover h2 {
+    display: block; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: none; 
+}
+
+.sidebar:hover ul {
+    display: block; 
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>French Lunch Recipes</h1>
+        <p>Savor the flavors of French cuisine with these delicious lunch recipes.</p>
+    </header>
+
+    <div class="sidebar">
+    <h2>The Wandering Fork</h2>
+        <ul>
+            <li><a href="Homepage.html" class="active">Home</a></li>
+             <li><a href="about.html" class="active">About</a></li>
+            <li><a href="Recipe.html" class="active">Recipe</a></li>
+            <li><a href="videogallery.html" class="active">VideoGallery</a></li>
+        </ul>
+    </div>
+
+     <div class="recipes-container">
+        <!-- Recipe 1: Ratatouille -->
+        <div class="recipe-card">
+            <img src="rat.jpg" alt="Ratatouille">
+            <h3>Ratatouille</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>2 zucchinis</li>
+                    <li>2 eggplants</li>
+                    <li>2 bell peppers</li>
+                    <li>1 onion</li>
+                    <li>4 tomatoes</li>
+                    <li>2 tbsp olive oil</li>
+                    <li>Salt and pepper</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Slice vegetables and layer them in a baking dish.</li>
+                    <li>Drizzle olive oil, season, and bake for 45 minutes at 375°F.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Best enjoyed in summer.</p>
+        </div>
+
+        <!-- Recipe 2: Coq au Vin -->
+        <div class="recipe-card">
+            <img src="coq.jpg" alt="Coq au Vin">
+            <h3>Coq au Vin</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>1 whole chicken, cut</li>
+                    <li>2 cups red wine</li>
+                    <li>1 cup chicken broth</li>
+                    <li>2 carrots</li>
+                    <li>1 onion</li>
+                    <li>2 tbsp butter</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Marinate chicken in wine overnight.</li>
+                    <li>Brown chicken, add vegetables, and simmer with broth.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Perfect for winter.</p>
+        </div>
+
+        <!-- Recipe 3: Bouillabaisse -->
+        <div class="recipe-card">
+            <img src="bouil.jpg" alt="Bouillabaisse">
+            <h3>Bouillabaisse</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>1 lb assorted seafood</li>
+                    <li>4 tomatoes</li>
+                    <li>1 onion</li>
+                    <li>4 garlic cloves</li>
+                    <li>1/2 cup white wine</li>
+                    <li>1 tbsp olive oil</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Sauté garlic and onion in olive oil.</li>
+                    <li>Add tomatoes, wine, and seafood. Simmer until cooked.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Great in spring.</p>
+        </div>
+
+        <!-- Recipe 4: Croque Monsieur -->
+        <div class="recipe-card">
+            <img src="croque.jpg" alt="Croque Monsieur">
+            <h3>Croque Monsieur</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>4 slices of bread</li>
+                    <li>4 slices of ham</li>
+                    <li>1 cup grated Gruyère cheese</li>
+                    <li>1/2 cup béchamel sauce</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Layer ham and cheese between bread slices.</li>
+                    <li>Top with béchamel and bake until golden.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Perfect year-round.</p>
+        </div>
+
+        <!-- Recipe 5: Salade Nicoise -->
+        <div class="recipe-card">
+            <img src="salad.jpg" alt="Salade Niçoise">
+            <h3>Salade Nicoise</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>2 cups mixed greens</li>
+                    <li>1/2 cup green beans</li>
+                    <li>1/2 cup cherry tomatoes</li>
+                    <li>2 boiled eggs</li>
+                    <li>1 can tuna</li>
+                    <li>Olive oil and lemon juice</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Arrange greens, vegetables, and tuna on a plate.</li>
+                    <li>Drizzle with olive oil and lemon juice.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Ideal for summer.</p>
+        </div>
+
+        <!-- Quiche Lorraine -->
+        <div class="recipe-card">
+            <img src="quiche.jpg" alt="Quiche Lorraine">
+            <h3>Quiche Lorraine</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>1 pie crust</li>
+                    <li>4 eggs</li>
+                    <li>1 cup heavy cream</li>
+                    <li>1 cup Gruyère cheese</li>
+                    <li>100g bacon bits</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Prebake crust, fill with egg mixture and bacon.</li>
+                    <li>Bake until set.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Great for fall.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 French Lunch Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>

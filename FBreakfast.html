@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>French Breakfast Recipes</title>
+    <style>
+        body {
+            font-family: Trebuchet-MS, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5f2;
+            color: #333;
+        }
+        header {
+            background-color: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .recipes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .recipe-card {
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 300px;
+        }
+        .recipe-card h3 {
+            margin: 10px 0;
+            color: #4682B4;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .recipe-card p {
+            margin: 10px 20px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .sidebar {
+    background-color: #333;
+    color: white;
+    width: 40px; 
+    padding: 20px 5px; 
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease, padding 0.2s ease; 
+}
+
+.sidebar:hover {
+    width: 250px; 
+    padding: 20px; 
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: none; 
+}
+
+.sidebar:hover h2 {
+    display: block; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: none; 
+}
+
+.sidebar:hover ul {
+    display: block; 
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>French Breakfast Recipes</h1>
+        <p>Delightful French breakfasts and the best seasons to enjoy them.</p>
+    </header>
+
+    <div class="sidebar">
+    <h2>The Wandering Fork</h2>
+        <ul>
+            <li><a href="Homepage.html" class="active">Home</a></li>
+             <li><a href="about.html" class="active">About</a></li>
+            <li><a href="Recipe.html" class="active">Recipe</a></li>
+            <li><a href="videogallery.html" class="active">VideoGallery</a></li>
+        </ul>
+    </div>
+
+     <div class="recipes-container">
+        <!-- Croissant -->
+        <div class="recipe-card">
+            <img src="croissants.jpg" alt="Croissant">
+            <h3>Croissant</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>2 cups all-purpose flour</li>
+                    <li>1/4 cup sugar</li>
+                    <li>1 tsp salt</li>
+                    <li>1 cup unsalted butter</li>
+                    <li>2/3 cup milk</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Prepare dough and fold in butter layers.</li>
+                    <li>Shape into crescents, proof, and bake until golden brown.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Perfect year-round.</p>
+        </div>
+
+        <!-- Pain au Chocolat -->
+        <div class="recipe-card">
+            <img src="pain.jpg" alt="Pain au Chocolat">
+            <h3>Pain au Chocolat</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>2 cups all-purpose flour</li>
+                    <li>1/4 cup sugar</li>
+                    <li>1 tsp salt</li>
+                    <li>1 cup unsalted butter</li>
+                    <li>100g dark chocolate sticks</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Roll out dough, place chocolate sticks, and fold.</li>
+                    <li>Proof and bake until golden brown.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Great for winter mornings.</p>
+        </div>
+
+        <!-- French Toast (Pain Perdu) -->
+        <div class="recipe-card">
+            <img src="ftoast.jpg" alt="French Toast">
+            <h3>French Toast (Pain Perdu)</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>4 slices of stale bread</li>
+                    <li>2 eggs</li>
+                    <li>1/2 cup milk</li>
+                    <li>2 tbsp sugar</li>
+                    <li>Butter for frying</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Whisk eggs, milk, and sugar.</li>
+                    <li>Dip bread and fry in butter until golden.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Best in spring with fresh fruits.</p>
+        </div>
+
+        <!-- Quiche Lorraine -->
+        <div class="recipe-card">
+            <img src="quiche.jpg" alt="Quiche Lorraine">
+            <h3>Quiche Lorraine</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>1 pie crust</li>
+                    <li>4 eggs</li>
+                    <li>1 cup heavy cream</li>
+                    <li>1 cup grated Gruyère cheese</li>
+                    <li>100g bacon bits</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Prebake crust, add bacon and cheese.</li>
+                    <li>Pour egg-cream mixture and bake until set.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Ideal for fall mornings.</p>
+        </div>
+
+        <!-- Crepes -->
+        <div class="recipe-card">
+            <img src="crepes.jpg" alt="Crepes">
+            <h3>Crepes</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>1 cup all-purpose flour</li>
+                    <li>2 eggs</li>
+                    <li>1/2 cup milk</li>
+                    <li>1/2 cup water</li>
+                    <li>2 tbsp melted butter</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Mix all ingredients into a thin batter.</li>
+                    <li>Cook in a nonstick pan until lightly browned.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Best enjoyed in summer with fresh berries.</p>
+        </div>
+
+        <!-- Omelette au Fromage -->
+        <div class="recipe-card">
+            <img src="omelette.jpg" alt="Cheese Omelette">
+            <h3>Omelette au Fromage</h3>
+            <p><strong>Ingredients:</strong>
+                <ul>
+                    <li>2 eggs</li>
+                    <li>1/4 cup grated cheese</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>Butter for frying</li>
+                </ul>
+            </p>
+            <p><strong>Instructions:</strong>
+                <ol>
+                    <li>Whisk eggs, season with salt and pepper.</li>
+                    <li>Cook in butter, add cheese, and fold.</li>
+                </ol>
+            </p>
+            <p><strong>Season:</strong> Perfect for year-round breakfasts.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 French Breakfast Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
